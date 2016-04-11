@@ -7,3 +7,6 @@
 <li><b>PIL</b> </li>
 <li><b>pytesseract</b> lib</li>
 </ul>
+
+<h5>Usages : python result_form.py REGNO</h5>
+<h6>example: python resultform.py RA1411003010465</h6>
