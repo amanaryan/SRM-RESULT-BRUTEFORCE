@@ -6,14 +6,14 @@ from StringIO import StringIO
 import time
 import sys
 
-#XXXXX1051210129
+
 cerror=0
 berror=0
 count=0
 result_url="http://evarsity.srmuniv.ac.in/srmwebonline/exam/onlineResult.jsp"
 captcha_url="http://evarsity.srmuniv.ac.in/srmwebonline/Captcha"
 name=int(round(time.time() * 1000))
-# REGNO=sys.argv[1]
+REGNO=sys.argv[1]
 
 def getCaptcha():
     captcha=requests.get(captcha_url)
@@ -28,7 +28,7 @@ def genfrmDate(date,month,year):
     date=str(date).zfill(2)
     return str(str(year)+"-"+str(month)+"-"+str(date)),date,month,year
 
-REGNO=str("RA1411003010151")
+
 
 caperror="Invalid Verification Code"
 bdayerror="Given Date of Birth is Incorrect"
